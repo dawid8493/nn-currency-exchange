@@ -3,12 +3,16 @@ package pl.nn.currencyexchange.application.rest.dto;
 import jakarta.validation.constraints.Digits;
 import java.math.BigDecimal;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import pl.nn.currencyexchange.domain.enums.Currency;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class AccountBalanceQuery {
 
   private Owner owner;
@@ -16,6 +20,8 @@ public class AccountBalanceQuery {
 
   @Data
   @Builder
+  @NoArgsConstructor
+  @AllArgsConstructor
   public static class Owner {
 
     private String firstName;
@@ -24,6 +30,8 @@ public class AccountBalanceQuery {
 
   @Data
   @Builder
+  @NoArgsConstructor
+  @AllArgsConstructor
   public static class CurrencyBalance {
 
     private Currency currency;

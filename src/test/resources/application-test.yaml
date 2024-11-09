@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    openfeign:
+      lazy-attributes-resolution: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+feign:
+  nbp:
+    url: http://localhost:8081
